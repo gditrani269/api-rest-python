@@ -16,13 +16,13 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])     
 def home(): 
-    cursor1.execute("SELECT id, name FROM leads")
-    sTemp = 'sasa'
-    """
+    cursor1.execute("SELECT receta, estilo FROM cerveza")
+    sTemp = ''
+    
     for fila in cursor1:
         print(fila)
         sTemp = sTemp + fila[1] + ' - '
-    """
+    
     sOut = "<html><head></head><body>" + sTemp + "</body></html>"
     return sOut
 	
