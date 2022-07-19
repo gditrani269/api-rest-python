@@ -28,11 +28,11 @@ app.register_blueprint(SWAGGERUI_BLUEPRINT, url_prefix=SWAGGER_URL)
 def home(): 
     cursor1.execute("SELECT id, name FROM leads")
     sTemp = 'sasa'
-"""
+    """
     for fila in cursor1:
         print(fila)
         sTemp = sTemp + fila[1] + ' - '
-"""
+    """
     sOut = "<html><head></head><body>" + sTemp + "</body></html>"
     return sOut
 	
