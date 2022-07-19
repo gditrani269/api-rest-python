@@ -1,7 +1,6 @@
 import json
 from flask import Flask, render_template, redirect, request ,jsonify 
 import os
-import requests
 from flask_swagger_ui import get_swaggerui_blueprint
 from flask_cors import CORS
 
