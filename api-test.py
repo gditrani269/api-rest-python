@@ -10,7 +10,7 @@ conexion1 = psycopg2.connect(host="ec2-23-20-124-77.compute-1.amazonaws.com", da
 cursor1=conexion1.cursor()
 
 app = Flask(__name__)
-cors=CORS(app)
+#cors=CORS(app)
 ### swagger specific ###
 SWAGGER_URL = '/swagger'
 API_URL = '/static/swagger.json'
