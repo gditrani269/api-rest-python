@@ -6,7 +6,7 @@ from flask import Flask, render_template, redirect, request ,jsonify
 
 import psycopg2
 
-conexion1 = psycopg2.connect(host="localhost", database="mi_base", user="postgres", password="cerveza2022")
+conexion1 = psycopg2.connect(host="ec2-23-20-124-77.compute-1.amazonaws.com", database="ddsogo2cmtup33", user="humlprjlvdbdnt", password="f8280465b2f538726d073816c7862c981b13ada9fbd7a0b6813e7ffe620077a6")
 cursor1=conexion1.cursor()
 
 app = Flask(__name__)
